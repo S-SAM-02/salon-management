@@ -1,50 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#101713" />
-  <meta name="description" content="Chairside — a modern salon growth and management dashboard." />
-  <title>Chairside — Salon Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#101713"><meta name="description" content="Chairside — a modern salon growth and management dashboard.">
+<title>Chairside — Salon Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar">
-      <a class="brand" href="#" aria-label="Chairside home">
-        <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 9.5 16 4l9 5.5v13L16 28l-9-5.5z"/><path d="m11 12 5-3 5 3v7l-5 3-5-3z"/></svg></span>
-        <span><strong>chairside</strong><small>SALON STUDIO</small></span>
-      </a>
-      <div class="workspace-label">WORKSPACE</div>
-      <nav class="nav-list" aria-label="Main navigation">
-        <button class="nav-item active" data-page="overview"><span class="nav-icon">▦</span> Overview</button>
-        <button class="nav-item" data-page="appointments"><span class="nav-icon">▣</span> Appointments <span class="nav-count" id="appointmentNavCount">4</span></button>
-        <button class="nav-item" data-page="customers"><span class="nav-icon">♙</span> Customers</button>
-        <button class="nav-item" data-page="loyalty"><span class="nav-icon">✳</span> Loyalty & wallet</button>
-        <button class="nav-item" data-page="services"><span class="nav-icon">✂</span> Services</button>
-        <button class="nav-item" data-page="analytics"><span class="nav-icon">↗</span> Analytics</button>
-      </nav>
-      <div class="sidebar-bottom">
-        <div class="tip-card"><span class="tip-spark">✦</span><strong>Small steps. Loyal customers.</strong><p>Build habits that keep your chairs busy and customers coming back.</p><button data-page="loyalty">Explore loyalty <span>↗</span></button></div>
-        <button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span> Salon settings</button>
-        <div class="profile-row"><div class="avatar avatar-owner">SS</div><div class="profile-meta"><strong id="ownerDisplay">Studio owner</strong><small>Owner account · Demo</small></div><span class="profile-dots">•••</span></div>
-      </div>
-    </aside>
-    <main class="main-area">
-      <header class="topbar">
-        <button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
-        <div class="crumbs"><span>Workspace</span><span class="crumb-slash">/</span><strong id="breadcrumb">Overview</strong></div>
-        <div class="top-actions"><span class="live-pill"><i></i> Demo workspace</span><button class="icon-button" id="notificationsBtn" aria-label="Notifications">♧<b></b></button><div class="avatar avatar-owner top-avatar">SS</div></div>
-      </header>
-      <section class="page-content" id="pageContent" aria-live="polite"></section>
-      <footer class="footer"><span>Chairside Studio <span class="footer-dot">•</span> Built for independent salons</span><span>Designed to bring customers back.</span></footer>
-    </main>
-  </div>
-  <div id="modalRoot"></div>
-  <div class="toast-region" id="toastRegion" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
-</body>
-</html>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#" aria-label="Chairside home"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 9.5 16 4l9 5.5v13L16 28l-9-5.5z"/><path d="m11 12 5-3 5 3v7l-5 3-5-3z"/></svg></span><span><strong>chairside</strong><small>SALON STUDIO</small></span></a>
+<div class="workspace-label">WORKSPACE</div>
+<nav class="nav-list" aria-label="Main navigation">
+<button class="nav-item active" data-page="overview"><span class="nav-icon">▦</span> Overview</button>
+<button class="nav-item" data-page="appointments"><span class="nav-icon">▣</span> Appointments <span class="nav-count" id="appointmentNavCount">4</span></button>
+<button class="nav-item" data-page="customers"><span class="nav-icon">♙</span> Customers</button>
+<button class="nav-item" data-page="loyalty"><span class="nav-icon">✳</span> Loyalty &amp; wallet</button>
+<button class="nav-item" data-page="services"><span class="nav-icon">✂</span> Services</button>
+<button class="nav-item" data-page="analytics"><span class="nav-icon">↗</span> Analytics</button>
+</nav>
+<div class="sidebar-bottom">
+<div class="tip-card"><span class="tip-spark">✦</span><strong>Small steps. Loyal customers.</strong><p>Build habits that keep your chairs busy and customers coming back.</p><button data-page="loyalty">Explore loyalty <span>↗</span></button></div>
+<button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span> Salon settings</button>
+<div class="profile-row"><div class="avatar avatar-owner">SS</div><div class="profile-meta"><strong id="ownerDisplay">Studio owner</strong><small>Owner account · Demo</small></div><span class="profile-dots">•••</span></div>
+</div></aside>
+<main class="main-area">
+<header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button><div class="crumbs"><span>Workspace</span><span class="crumb-slash">/</span><strong id="breadcrumb">Overview</strong></div><div class="top-actions"><span class="live-pill"><i></i> Demo workspace</span><button class="icon-button" id="notificationsBtn" aria-label="Notifications">♧<b></b></button><div class="avatar avatar-owner top-avatar">SS</div></div></header>
+<section class="page-content" id="pageContent" aria-live="polite"></section>
+<footer class="footer"><span>Chairside Studio <span class="footer-dot">•</span> Built for independent salons</span><span>Designed to bring customers back.</span></footer>
+</main></div>
+<div id="modalRoot"></div><div class="toast-region" id="toastRegion" role="status" aria-live="polite"></div><script src="app.js"></script>
+</body></html>
